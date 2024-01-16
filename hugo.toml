@@ -1,0 +1,79 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'GuyOnARecovery | Blog'
+theme = "hugo-blog-awesome"
+defaultContentLanguage = "en-gb"
+
+
+  [menu]
+  [[menu.main]]
+    pageRef="/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+ 
+   [[menu.main]]
+    pageRef="life"
+    name = 'Life'
+    url = '/life/'
+    weight = 20
+
+  [[menu.main]]
+    pageRef="fitness"
+    name = 'Fitness'
+    url = '/fitness/'
+    weight = 30
+
+    [[menu.main]]
+    pageRef="technical"
+    name = 'Technical'
+    url = '/technical/'
+    weight = 40
+
+  [[menu.main]]
+    pageRef="about"
+    name = 'About'
+    url = '/about/'
+    weight = 50
+
+[params]
+  defaultColor = "dark" # set color mode: dark, light, auto
+  description = "A personal blog with my journal of road to recovery capturing my thoughts, mindset, goals to become a better disciplined person."
+  mainSections = ['life','technical','fitness']
+  toc = true # set to false to disable table of contents 'globally'
+  tocOpen = false # set to true to open table of contents by default
+  goToTop = true # set to false to disable 'go to top' button
+  dateFormat = ""
+
+
+[params.author]
+  avatar = "image/guy.jpg"
+  intro = "Guy On A Recovery | Blog"
+  name = "GuyOnARecovery"
+  description = "A personal blog with my journal of road to recovery capturing my thoughts, mindset, goals to become a better disciplined person."
+
+# Allow to override webmanifest options
+[params.webmanifest]
+  name = "sitename" 
+  short_name = "sitename"
+  start_url = "/"
+  theme_color = "#434648"
+  background_color = "#fff" 
+  display = "standalone"
+
+
+
+
+# Allow to override `browserconfig.xml` params (configuration for windows embeded browsers)
+[params.browserconfig]
+  TileColor = "#2d89ef" # default windows 10 blue tile color
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/GuyonaRecovery"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/GuyonaRecovery"
+
+
